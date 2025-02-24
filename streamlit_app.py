@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 📂 Chemins des fichiers de données
-file_path_patients = r"./BDD_Michka.csv"
-file_path_rdv = r"./RDV.csv"
+file_path_patients = r"./db/BDD_Michka.csv"
+file_path_rdv = r"./db/RDV.csv"
 file_purge_rdv = r"./db/Purge_RDV.csv"
 
 # 📂 Chemins des fichiers de données perso
