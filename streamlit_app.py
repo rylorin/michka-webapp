@@ -1,3 +1,6 @@
+#--------------------------------------------------------------------------------------------------------------------
+#--------------------------------------Str_Web_2TAB_PRO_Michka_V11.py------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------
 import streamlit as st
 import pandas as pd
 from datetime import date, datetime, time
@@ -9,6 +12,11 @@ import seaborn as sns
 file_path_patients = r"./BDD_Michka.csv"
 file_path_rdv = r"./RDV.csv"
 file_purge_rdv = r"./db/Purge_RDV.csv"
+
+# 📂 Chemins des fichiers de données perso
+# file_path_patients = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\BDD_Michka.csv"
+# file_path_rdv = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\RDV.csv"
+# file_purge_rdv = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\Purge_RDV.csv"
 
 
 # Fonction pour reconstruire Date_RDV au format français
