@@ -503,7 +503,7 @@ def ajouter_modifier_patient():
         with col1:
             niveau = st.selectbox("Niveau", ["Débutant", "Intermédiaire", "Avancé"])
         with col2:
-            cat = st.selectbox("Catégorie", ['Bebe' 'Enfant' 'Adolescent' 'Adulte' 'Avancé'])
+            cat = st.selectbox("Catégorie", ['Bebe', 'Enfant', 'Adolescent', 'Adulte'])
         with col3:
             date_pc = st.date_input("Date de Prise en Charge", min_value=date.today())
 
