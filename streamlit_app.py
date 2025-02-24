@@ -1,3 +1,8 @@
+#------------------------------------------------------------------------------------------------------------
+#--------------------------------------MICHKA MENU WEB PROFESSIONNEL-----------------------------------------
+#--------------------------------------Str_Web_2TAB_PRO_Michka_V11.py----------------------------------------
+#------------------------------------------------------------------------------------------------------------
+
 import streamlit as st
 import pandas as pd
 from datetime import date, datetime, time
@@ -6,9 +11,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 📂 Chemins des fichiers de données
-file_path_patients = r"./BDD_Michka.csv"
-file_path_rdv = r"./RDV.csv"
+file_path_patients = r"./db/BDD_Michka.csv"
+file_path_rdv = r"./db/RDV.csv"
 file_purge_rdv = r"./db/Purge_RDV.csv"
+
+# 📂 Chemins des fichiers de données perso
+#file_path_patients = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\BDD_Michka.csv"
+#file_path_rdv = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\RDV.csv"
+#file_purge_rdv = r"C:\Users\MANRESA\Documents\DESC\5_Informatique\Projet Michka\BDD_Michka\Purge_RDV.csv"
 
 
 # Fonction pour reconstruire Date_RDV au format français
@@ -493,7 +503,7 @@ def ajouter_modifier_patient():
         with col1:
             niveau = st.selectbox("Niveau", ["Débutant", "Intermédiaire", "Avancé"])
         with col2:
-            cat = st.selectbox("Catégorie", ['Bebe' 'Enfant' 'Adolescent' 'Adulte' 'Avancé'])
+            cat = st.selectbox("Catégorie", ['Bebe', 'Enfant', 'Adolescent', 'Adulte'])
         with col3:
             date_pc = st.date_input("Date de Prise en Charge", min_value=date.today())
 
